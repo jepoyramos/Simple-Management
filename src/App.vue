@@ -1,14 +1,22 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+  <div id="app" class="o-gridContainer o-grid--4col">
+    <div class="c-sidebar">
+      <div id="nav">
+        <router-link to="/">Dashboard</router-link>
+        <router-link to="/projects">Projects</router-link>
+        <router-link to="/about">Tasks</router-link>
+      </div>
     </div>
-    <router-view/>
+    <div class="c-mainView o-grid__column--3col">
+      <router-view/>
+    </div>
   </div>
 </template>
 
 <style lang="scss">
+body{
+  margin: 0;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -16,13 +24,49 @@
   text-align: center;
   color: #2c3e50;
 }
+.o-gridContainer{
+  display: grid;
+}
+.o-grid--4col{
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+}
+.o-grid--3col{
+  grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+}
+.o-grid--2col{
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+}
+.o-grid__column--4col{
+  grid-column: auto / span 4;
+  -ms-grid-column: auto / span 4;
+}
+.o-grid__column--3col{
+  grid-column: auto / span 3;
+  -ms-grid-column: auto / span 3;
+}
+.o-grid__column--2col{
+  grid-column: auto / span 2;
+  -ms-grid-column: auto / span 2;
+}
+.c-sidebar{
+  background: #323659;
+  height: 100vh;
+}
+.c-mainView{
+  height: 100vh;
+  overflow: scroll;
+}
 #nav {
-  padding: 30px;
   a {
+    display: block;
     font-weight: bold;
-    color: #2c3e50;
+    color: #ffffff;
+    text-decoration: none;
     &.router-link-exact-active {
-      color: #42b983;
+      background: #42b983;
     }
   }
 }
