@@ -4,14 +4,15 @@
     	<input type="text" v-model="newProject">
     	<button @click="addProject">Create Project</button>
     </div>
-    <div class="o-projects__projectList" >
-    	<Project v-for='(project, index) in projects' :key="index" :projectTitle="project.title"/>
+    <div class="o-projects__projectList o-gridContainer o-grid--3col" >
+    	<Card v-for='(project, index) in projects' :key="index" :cardTitle="project.title" :cardID="cardID(index)"/>
     </div>
   </div>
 </template>
 
 <script>
-import Project from '../components/Project.vue';
+import Card from '../components/Card.vue';
+
 export default {
   name: 'Projects',
   data () {
@@ -24,7 +25,7 @@ export default {
   	}
   },
   components: {
-  	Project
+    Card
   },
   methods: {
 		addProject(){
@@ -35,6 +36,11 @@ export default {
 				alert('Please add project title');
 			}
 		}
+  },
+  computed: {
+    cardID(index){
+      return index+1;
+    }
   }
 }
 </script>

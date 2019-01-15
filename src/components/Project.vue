@@ -1,6 +1,6 @@
 <template>
   <div class="c-project">
-    <h2>{{projectTitle}}</h2>
+    <h2>{{projectTitle}} " Project view"</h2>
     <p>{{projectDescription}}</p>
   </div>
 </template>
