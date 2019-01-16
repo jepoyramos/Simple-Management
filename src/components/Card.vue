@@ -1,8 +1,6 @@
 <template>
-	<router-link to="/project/:cardID" class="c-card">
-    <h2>{{cardTitle}}</h2>
-    <h2>{{cardID}}</h2>
- 	</router-link>
+	<router-link :to="`/project/${cardID}`" class="c-card">
+    <h2>{{cardTitle}}</h2></router-link>
 </template>
 
 <script>
@@ -10,7 +8,7 @@ export default {
   name: 'Card',
   props: {
     cardTitle: String,
-    cardID: String
+    cardID: Number
   }
 }
 </script>
@@ -21,5 +19,7 @@ export default {
 		border: solid 1px #696969;
 		border-radius: 5px;
 		margin: 5px;
+    text-decoration: none;
+    color: #323659;
 	}
 </style>

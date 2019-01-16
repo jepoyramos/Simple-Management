@@ -5,13 +5,14 @@
     	<button @click="addProject">Create Project</button>
     </div>
     <div class="o-projects__projectList o-gridContainer o-grid--3col" >
-    	<Card v-for='(project, index) in projects' :key="index" :cardTitle="project.title" :cardID="cardID(index)"/>
+    	<Card v-for='(project, index) in projects' :key="index" :cardTitle="project.title" :cardID="index"/>
     </div>
   </div>
 </template>
 
 <script>
 import Card from '../components/Card.vue';
+import Project from '../components/Project.vue';
 
 export default {
   name: 'Projects',
@@ -25,13 +26,15 @@ export default {
   	}
   },
   components: {
-    Card
+    Card,
+    Project
   },
   methods: {
 		addProject(){
 			if (this.newProject != '') {
 				this.projects.push({"title": this.newProject});
-				this.newProject='';
+				<Project />
+        this.newProject='';
 			}else{
 				alert('Please add project title');
 			}
@@ -44,3 +47,15 @@ export default {
   }
 }
 </script>
+
+<style scoped lang="scss">
+  .c-projects{
+    padding: 20px;
+  }
+  .o-projects__addProject{
+    text-align: right;
+  }
+  .o-projects__projectList{
+    margin: 10px auto;
+  }
+</style>

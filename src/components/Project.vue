@@ -1,7 +1,9 @@
 <template>
   <div class="c-project">
-    <h2>{{projectTitle}} " Project view"</h2>
+    <h2>{{projectTitle}} " Project Title"</h2>
     <p>{{projectDescription}}</p>
+     <h2>Project ID:{{ this.$route.params.id }}</h2>
+    
   </div>
 </template>
 
