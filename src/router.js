@@ -19,7 +19,7 @@ export default new Router({
     {
       path: '/project/:id',
       name: 'project',
-      component: () => import('./components/Project.vue'),
+      component: () => import('./views/Project.vue'),
       props: true,
     },
     {

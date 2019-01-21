@@ -3,7 +3,6 @@
     <h1>{{projectTitle}}</h1>
     <p>{{projectDescription}}</p>
     <h2>Project ID:{{ this.$route.params.id }}</h2>
-    
   </div>
 </template>
 
@@ -16,6 +15,6 @@ export default {
   },
   components: {},
   methods: {},
-  computed: {}
+  computed: {},
 }
 </script>

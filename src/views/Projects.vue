@@ -12,7 +12,6 @@
 
 <script>
 import Card from '../components/Card.vue';
-import Project from '../components/Project.vue';
 
 export default {
   name: 'Projects',
@@ -27,7 +26,6 @@ export default {
   },
   components: {
     Card,
-    Project
   },
   methods: {
 		addProject(){
