@@ -1,19 +1,17 @@
-{
-  "Projects": [
-    {
-      "projectID" : "1",
-      "projectName" : "Project Name 1",
-      "projectDescription" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, facilis libero molestiae temporibus esse!",
-    },
-    {
-      "projectID" : "2",
-      "projectName" : "Project Name 2",
-      "projectDescription" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, facilis libero molestiae temporibus esse!",
-    },
-    {
-      "projectID" : "3",
-      "projectName" : "Project Name 3",
-      "projectDescription" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, facilis libero molestiae temporibus esse!",
-    },
-  ]
-}
+[
+  {
+    "projectID" : "1",
+    "projectName" : "Project Name 1",
+    "projectDescription" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, facilis libero molestiae temporibus esse!",
+  },
+  {
+    "projectID" : "2",
+    "projectName" : "Project Name 2",
+    "projectDescription" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, facilis libero molestiae temporibus esse!",
+  },
+  {
+    "projectID" : "3",
+    "projectName" : "Project Name 3",
+    "projectDescription" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, facilis libero molestiae temporibus esse!",
+  }
+]
