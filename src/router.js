@@ -14,12 +14,12 @@ export default new Router({
     {
       path: '/projects',
       name: 'projects',
-      component: () => import('./views/Projects.vue')
+      component: () => import('./components/Project/Projects.vue')
     },
     {
       path: '/project/:id',
       name: 'project',
-      component: () => import('./views/Project.vue'),
+      component: () => import('./components/Project/Project.vue'),
       props: true,
     },
     {

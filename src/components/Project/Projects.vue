@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import Card from '../components/Card.vue';
+import Card from '../Card.vue';
 
 export default {
   name: 'Projects',

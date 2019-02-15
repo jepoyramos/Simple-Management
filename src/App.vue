@@ -54,6 +54,7 @@ body{
 .c-sidebar{
   background: #323659;
   height: 100vh;
+  padding: 20px 0;
 }
 .c-mainView{
   height: 100vh;
@@ -65,7 +66,11 @@ body{
     font-weight: bold;
     color: #ffffff;
     text-decoration: none;
+    padding: 10px;
     &.router-link-exact-active {
+      background: #42b983;
+    }
+    &:hover{
       background: #42b983;
     }
   }
